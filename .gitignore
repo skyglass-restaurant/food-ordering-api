@@ -47,6 +47,7 @@ dist/
 bin/
 target/
 **/target/**
+**/volumes/**
 /.settings
 .classpath
 .project

@@ -13,11 +13,12 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQL9Dialect
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=customer&binaryTransfer=true&reWriteBatchedInserts=true
+    url: jdbc:postgresql://localhost:5432/fos?currentSchema=customer&binaryTransfer=true&reWriteBatchedInserts=true
     username: postgres
     password: admin
     driver-class-name: org.postgresql.Driver
     platform: postgres
+    data: classpath:init-data.sql
     schema: classpath:init-schema.sql
     initialization-mode: always
 
