@@ -21,7 +21,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-          cache: maven
+          cache: ~/.m2
       - name: Code vulnerability scanning
         uses: anchore/scan-action@v3
         id: scan
@@ -54,7 +54,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-          cache: maven
+          cache: ~/.m2
       - name: Build container image
         run: |
           cd customer-service/customer-container
