@@ -1,5 +1,0 @@
-/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/customer-service/customer-domain/customer-domain-core/src/main/java/com/food/ordering/system/customer/service/domain/entity/Customer.java
-/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/customer-service/customer-domain/customer-domain-core/src/main/java/com/food/ordering/system/customer/service/domain/CustomerDomainServiceImpl.java
-/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/customer-service/customer-domain/customer-domain-core/src/main/java/com/food/ordering/system/customer/service/domain/exception/CustomerDomainException.java
-/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/customer-service/customer-domain/customer-domain-core/src/main/java/com/food/ordering/system/customer/service/domain/event/CustomerCreatedEvent.java
-/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/customer-service/customer-domain/customer-domain-core/src/main/java/com/food/ordering/system/customer/service/domain/CustomerDomainService.java
