@@ -1,0 +1,10 @@
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-model/src/main/java/com/food/ordering/system/kafka/order/avro/model/RestaurantApprovalResponseAvroModel.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-model/src/main/java/com/food/ordering/system/kafka/order/avro/model/PaymentStatus.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-model/src/main/java/com/food/ordering/system/kafka/order/avro/model/Product.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-model/src/main/java/com/food/ordering/system/kafka/order/avro/model/RestaurantOrderStatus.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-model/src/main/java/com/food/ordering/system/kafka/order/avro/model/RestaurantApprovalRequestAvroModel.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-model/src/main/java/com/food/ordering/system/kafka/order/avro/model/PaymentRequestAvroModel.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-model/src/main/java/com/food/ordering/system/kafka/order/avro/model/OrderApprovalStatus.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-model/src/main/java/com/food/ordering/system/kafka/order/avro/model/PaymentResponseAvroModel.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-model/src/main/java/com/food/ordering/system/kafka/order/avro/model/PaymentOrderStatus.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-model/src/main/java/com/food/ordering/system/kafka/order/avro/model/CustomerAvroModel.java

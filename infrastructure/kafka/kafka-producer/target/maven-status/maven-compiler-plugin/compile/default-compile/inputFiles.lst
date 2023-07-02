@@ -1,0 +1,5 @@
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/KafkaMessageHelper.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/service/impl/KafkaProducerImpl.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/exception/KafkaProducerException.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/KafkaProducerConfig.java
+/Users/mykhailo.skliar/skyglass/skyglass-restaurant/food-ordering-api/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/service/KafkaProducer.java
