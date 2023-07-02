@@ -26,21 +26,20 @@ jobs:
           cache: maven
       - name: Build container image
         run: |
-          mvn clean install -DskipTests
           cd customer-service/customer-container
-          mvn spring-boot:build-image \
+          mvn spring-boot:build-image -DskipTests \
             -Dspring-boot.build-image.imageName=${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/customer-service:${{ env.VERSION }}
           cd ../../
           cd order-service/order-container
-          mvn spring-boot:build-image \
+          mvn spring-boot:build-image -DskipTests \
             -Dspring-boot.build-image.imageName=${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/order-service:${{ env.VERSION }}
           cd ../../
           cd payment-service/payment-container
-          mvn spring-boot:build-image \
+          mvn spring-boot:build-image -DskipTests \
             -Dspring-boot.build-image.imageName=${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/payment-service:${{ env.VERSION }} 
           cd ../../
           cd restaurant-service/restaurant-container
-          mvn spring-boot:build-image \
+          mvn spring-boot:build-image -DskipTests \
             -Dspring-boot.build-image.imageName=${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/restaurant-service:${{ env.VERSION }}                          
       - name: Log into container registry
         uses: docker/login-action@v2
