@@ -62,7 +62,7 @@ jobs:
             ${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/customer-service:latest
           docker push ${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/customer-service:latest
           docker tag ${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/order-service:${{ env.VERSION }} \
-            ${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/corder-service:latest
+            ${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/order-service:latest
           docker push ${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/order-service:latest
           docker tag ${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/payment-service:${{ env.VERSION }} \
             ${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/payment-service:latest
