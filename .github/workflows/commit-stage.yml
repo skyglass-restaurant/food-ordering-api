@@ -24,7 +24,10 @@ jobs:
           distribution: temurin
           java-version: 17
           cache: maven
-      - name: Build container image
+      - name: Build
+        run: |
+          mvn clean install -DskipTests
+      - name: Build container images
         run: |
           cd customer-service/customer-container
           mvn spring-boot:build-image -DskipTests \
