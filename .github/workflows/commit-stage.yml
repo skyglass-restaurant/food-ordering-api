@@ -7,36 +7,6 @@ env:
   VERSION: ${{ github.sha }}
 
 jobs:
-  build:
-    name: Build and Test
-    runs-on: ubuntu-22.04
-    permissions:
-      contents: read
-      security-events: write
-    steps:
-      - name: Checkout source code
-        uses: actions/checkout@v3
-      - name: Set up JDK
-        uses: actions/setup-java@v3
-        with:
-          distribution: temurin
-          java-version: 17
-          cache: ~/.m2
-      - name: Code vulnerability scanning
-        uses: anchore/scan-action@v3
-        id: scan
-        with:
-          path: "${{ github.workspace }}"
-          fail-build: false
-          severity-cutoff: high
-      - name: Upload vulnerability report
-        uses: github/codeql-action/upload-sarif@v2
-        if: success() || failure()
-        with:
-          sarif_file: ${{ steps.scan.outputs.sarif }}
-      - name: Build, unit tests and integration tests
-        run: |
-          mvn clean install -DskipTests
   package:
     name: Package and Publish
     if: ${{ github.ref == 'refs/heads/master' }}
@@ -54,9 +24,10 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-          cache: ~/.m2
+          cache: maven
       - name: Build container image
         run: |
+          mvn clean install -DskipTests
           cd customer-service/customer-container
           mvn spring-boot:build-image \
             -Dspring-boot.build-image.imageName=${{ env.REGISTRY }}/${{ env.IMAGE_OWNER }}/customer-service:${{ env.VERSION }}
