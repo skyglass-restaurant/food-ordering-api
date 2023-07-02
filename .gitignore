@@ -1,10 +1,12 @@
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
 HELP.md
-.DS_Store
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**
-!**/src/test/**
+!**/src/main/**/build/
+!**/src/test/**/build/
 
 ### STS ###
 .apt_generated
@@ -14,6 +16,9 @@ build/
 .settings
 .springBeans
 .sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
 .idea
@@ -21,6 +26,8 @@ build/
 *.iml
 *.ipr
 out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
 ### NetBeans ###
 /nbproject/private/
@@ -31,3 +38,23 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Frontend ###
+node_modules/
+dist/
+.DS_Store
+
+bin/
+target/
+**/target/**
+**/volumes/**
+/.settings
+.classpath
+.project
+.mvn
+.springBeans
+mvnw.cmd
+mvnw
+src/main/resources/static/
+
+### Test ##
