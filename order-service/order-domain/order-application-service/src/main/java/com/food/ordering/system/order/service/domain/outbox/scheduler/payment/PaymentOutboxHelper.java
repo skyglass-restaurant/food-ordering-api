@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.food.ordering.system.domain.valueobject.OrderStatus;
 import com.food.ordering.system.order.service.domain.exception.OrderDomainException;
-import com.food.ordering.system.order.service.domain.outbox.model.payment.OrderPaymentEventPayload;
+import com.food.ordering.system.domain.event.payload.OrderPaymentEventPayload;
 import com.food.ordering.system.order.service.domain.outbox.model.payment.OrderPaymentOutboxMessage;
 import com.food.ordering.system.order.service.domain.ports.output.repository.PaymentOutboxRepository;
 import com.food.ordering.system.outbox.OutboxStatus;
@@ -48,13 +48,13 @@ public class PaymentOutboxHelper {
 
     @Transactional
     public void save(OrderPaymentOutboxMessage orderPaymentOutboxMessage) {
-       OrderPaymentOutboxMessage response = paymentOutboxRepository.save(orderPaymentOutboxMessage);
-       if (response == null) {
-           log.error("Could not save OrderPaymentOutboxMessage with outbox id: {}", orderPaymentOutboxMessage.getId());
-           throw new OrderDomainException("Could not save OrderPaymentOutboxMessage with outbox id: " +
-                   orderPaymentOutboxMessage.getId());
-       }
-       log.info("OrderPaymentOutboxMessage saved with outbox id: {}", orderPaymentOutboxMessage.getId());
+        OrderPaymentOutboxMessage response = paymentOutboxRepository.save(orderPaymentOutboxMessage);
+        if (response == null) {
+            log.error("Could not save OrderPaymentOutboxMessage with outbox id: {}", orderPaymentOutboxMessage.getId());
+            throw new OrderDomainException("Could not save OrderPaymentOutboxMessage with outbox id: " +
+                    orderPaymentOutboxMessage.getId());
+        }
+        log.info("OrderPaymentOutboxMessage saved with outbox id: {}", orderPaymentOutboxMessage.getId());
     }
 
     @Transactional

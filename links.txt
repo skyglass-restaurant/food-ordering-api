@@ -1,0 +1,2 @@
+https://serverspace.io/support/help/how-to-install-ncat-tool-on_windows-and-linux/
+https://github.com/edenhill/kcat

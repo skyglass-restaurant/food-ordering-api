@@ -32,6 +32,14 @@
             <groupId>com.food.ordering.system</groupId>
             <artifactId>kafka-model</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.food.ordering.system</groupId>
+            <artifactId>common-messaging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
